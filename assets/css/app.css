@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background: url("../images/banner-bg.svg");
+}
+.form-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header-container h2,span {
+    font-family: 'Rubik', sans-serif;
+}
+.header-container span{
+    font-style: italic;
+    font-weight: 500;
+}
+.form-header {
+    flex: 0.3;
+    margin: 0 3% 2% 0;
+    padding: 0 2% 2% 0;
+    border-bottom: 4px solid #50f;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.header-container {
+    text-align: center;
+}
+
+.form-body{
+    flex: 1;
+    margin: 2% 5%;
+}
+
+.form-control{
+    display: grid;
+    margin: 2% auto;
+}
+
+#home-bg {
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.subscribe-area {
+    padding: 40px 50px 20px;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
+    box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 1%;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text],input[type=number],input[type=email],textarea,select{
+    line-height: 2;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 1px solid #00000047;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+select{
+    line-height: 3;
+    background-color: white;
+}
+
+*:focus {
+    outline: none;
+}
+
+button{
+    color: #fff;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin-top: 0;
+    text-align: center;
+    transition: all 0.1s ease-in;
+    font-family: Rubik, Roboto, sans-serif;
+    font-weight: 500;
+    margin-right: 0px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0px 0px 16px 0px;
+    background-color: #5500ff;  
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.subscribe-area{
+        margin: 5%;
+        padding: 20px 25px 10px;
+    }
+}

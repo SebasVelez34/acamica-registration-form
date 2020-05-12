@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acámica Formulario</title>
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <div class="subscribe-area" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeIn;">
+            <div class="form-container">
+                <div class="form-header">
+                    <div class="header-container">
+                        <h2 class="">¡Pongámonos en contacto!</h2>
+                        <span>Déjanos tus datos para que nuestro equipo de Admisiones pueda asesorarte.</span>
+                    </div>
+                </div>
+                <div class="form-body">
+                    <div class="">
+                        <form action="#" method="GET">
+                            <div class="form-control">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required placeholder="Nombre(s)">
+                            </div>
+                            <div class="form-control">
+                                <label for="lastname">Apellidos</label>
+                                <input type="text" id="lastname" name="lastname" required placeholder="Apellido(s)">
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Correo electronico">
+                            </div>
+                            <div class="form-control">
+                                <label for="country">País de residencia</label>
+                                <select name="country" id="country" required ></select>
+                            </div>
+                            <div class="form-control">
+                                <label for="career">¿A qué carrera deseas inscribirte?</label>
+                                <select name="career" id="career" required>
+                                    <optgroup label="Carrera">
+                                        <option value="UX/UI">UX/UI</option>
+                                        <option value="Data Science">Data Science</option>
+                                        <option value="Desarrollo Web Full Stack">Desarrollo Web Full Stack</option>
+                                        <option value="FrontEnd Avanzado">FrontEnd Avanzado</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <label for="modality" required>¿Modalidad?</label>
+                                <select name="modality" id="modality">
+                                    <option value="Presencial">Presencial</option>
+                                    <option value="Virtual">Virtual</option>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <label for="working">¿Estás trabajando actualmente?</label>
+                                <select name="working" id="working">
+                                    <option value="Sí">Sí</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <label for="contact_phone">Teléfono de Contacto</label>
+                                <input type="number" name="contact_phone" id="contact_phone" placeholder="Teléfono de contacto">
+                            </div>
+                            <div class="form-control">
+                                <label for="personal_description">Descripción personal</label>
+                                <textarea name="personal_description" id="personal_description" maxlength="300"></textarea>
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
